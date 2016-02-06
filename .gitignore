@@ -1,0 +1,28 @@
+bin
+obj
+*.user
+*.suo
+*.cache
+*.log
+*.resharper
+packages
+.DS_Store
+
+# ignore specwatchr
+src/red.png
+src/green.png
+src/sidekick.bat
+src/sidekickapp.cs
+src/sidekickapp.exe
+src/watcher_dot_net.rb
+src/watchr.bat
+src/sidekick.bat
+src/sidekickapp.cs
+src/sidekickapp.exe
+specwatchr-usage.txt
+dotnet.watchr.rb
+
+# ignore publish stuff
+build/publish/lib/*/*.dll
+build/*.nupkg
+build/publish/*.nuspec
