@@ -31,6 +31,10 @@ namespace RollbarSilverlight.Builders
                 model.Custom[keyValue.Key.ToString()] = keyValue.Value;
             }
 
+            //Inject the SL runtime version and environment version
+            model.Custom.Add("Silverlight.RuntimeVersion", System.Windows.Deployment.Current.RuntimeVersion);
+            model.Custom.Add("Silverlight.Environment", System.Environment.Version.ToString());
+
             model.Title = message;
 
             return model;
